@@ -17,7 +17,7 @@ public class MarkdownParseTest extends MarkdownParse {
         Path fileName = Path.of("test-file.md");
         String contents = Files.readString(fileName);
 
-        assertEquals(List.of("https://something.com", "some-page.html"), MarkdownParse.getLinks(contents));
+        assertEquals(List.of("https://something.com", "some-page.html"), contents);
     }
 
     // @Test
