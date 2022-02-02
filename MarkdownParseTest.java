@@ -20,6 +20,11 @@ public class MarkdownParseTest  {
         assertEquals(List.of("https://something.com", "some-page.html"), MarkdownParse.getLinks(contents));
     }
 
+    @Test
+    public void addition2() {
+        assertEquals(2, 1 + 3);
+    }
+
     // @Test
     // public void testFile1() throws IOException {
     //     String contents= Files.readString(Path.of("./test-file.md"));
