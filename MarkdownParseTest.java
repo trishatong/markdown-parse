@@ -6,7 +6,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
-public class MarkdownParseTest extends MarkdownParse {
+public class MarkdownParseTest  {
     @Test
     public void addition() {
         assertEquals(2, 1 + 1);
@@ -17,7 +17,7 @@ public class MarkdownParseTest extends MarkdownParse {
         Path fileName = Path.of("test-file.md");
         String contents = Files.readString(fileName);
 
-        assertEquals(List.of("https://something.com", "some-page.html"), contents);
+        assertEquals(List.of("https://something.com", "some-page.html"), getLinks(contents));
     }
 
     // @Test
